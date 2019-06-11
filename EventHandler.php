@@ -35,13 +35,7 @@ class EventHandler
         $peer_id = isset($message['peer_id'])?$message['peer_id']: $message['user_id'];
         $text = mb_strtolower($message['text'], "utf-8");
         if($text == "hello") $this->vk->sendMessage("Hello!",  $peer_id);
-        if($text == "kak si?") $this->vk->sendMessage("Dobre!",  $peer_id);
-        if($text == "Zasto") $this->vk->sendMessage("emi taka!",  $peer_id);
-       // if($text == "пока") $this->vk->sendMessage("До скорой встречи", );
-        $kb = new KeyboardBuilder();
-        $key = $kb->addButton(new Button("привет", "positive"))->addButton(new Button("пока", "negative"))->build();
-        if($text == "где мы находимся?") $this->vk->sendMessage("На IT-форуме.",  $peer_id, $key);
-
+        echo "OK";
 
     }
 
