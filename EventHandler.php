@@ -4,7 +4,6 @@ namespace VK;
 use Button;
 use KeyboardBuilder;
 use mysqli;
-use User;
 
 class EventHandler
 {
